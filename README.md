@@ -1,1 +1,1 @@
-This will (hopefully) become an in-browser Etch-A-Sketch
+https://www.theodinproject.com/lessons/etch-a-sketch-project
