@@ -3,10 +3,32 @@
     padding: 0;
 }
 
+h1{
+    text-align: center;
+    margin-bottom: 25px;
+    font-family: 'Yellowtail', cursive;
+    font-size: 75px;
+}
+
+button{
+    background-color: orange;
+    border: 1px solid white;
+    color: white;
+    padding: 15px 35px;
+    font-size: 15px;
+    display: block;
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 #container{
-    margin: 100px auto auto auto;
-    height: 600px;
-    width: 600px;
+    display: block;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 601px;
+    width: 601px;
     border: 2px double black;
 }
 

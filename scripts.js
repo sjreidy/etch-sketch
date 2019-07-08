@@ -1,5 +1,7 @@
+var numOfSides = 18;
+var container = document.getElementById('container');
 
-let numOfSides = 16;
+
 
 function createDivs(numOfSides){
     var cellSize = 600/numOfSides;
@@ -9,7 +11,30 @@ function createDivs(numOfSides){
         innerCell.style.width = `${cellSize}px`;
         innerCell.classList.add("innerCell");
         document.getElementById('container').appendChild(innerCell);
+        var innerCells = document.querySelectorAll('.innerCell');
+        innerCells.forEach(function(cell, index) {
+            cell.addEventListener('mouseover', function(){
+                cell.style.backgroundColor = "black";
+            });
+        });
+        
     }
 }
 
-createDivs(16);
+function clearGrid(){
+    numOfSides = prompt("How many squares would you like per side this time?");
+    container.innerHTML = '';
+    createDivs(numOfSides);
+}
+
+createDivs(numOfSides);
+document.getElementById("clearGrid").onclick = function() {clearGrid()};
+
+
+
+
+
+
+
+
+
