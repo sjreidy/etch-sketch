@@ -22,6 +22,10 @@ button{
     margin-right: auto;
 }
 
+button:active{
+    background-color: blue;
+}
+
 #container{
     display: block;
     margin-top: 50px;
